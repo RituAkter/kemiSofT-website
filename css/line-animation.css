@@ -1,0 +1,137 @@
+
+/* ---------------------- Section Lines Starts -------------------- */
+.sec-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 1;
+}
+
+.line-item {
+    width: 228px;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(153, 153, 153, 0.05);
+    position: absolute;
+}
+
+.line-item:first-child {
+    border-left: 1px solid rgba(153, 153, 153, 0.05);
+}
+
+.line-item:first-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 3px;
+    height: 30px;
+    background: #F7931C;
+    animation: scroll_1 8s ease-out infinite;
+}
+
+@keyframes scroll_1 {
+    0% {
+        opacity: 1;
+        top: 0
+    }
+    50% {
+        top: 50%
+    }
+    100% {
+        top: 99%;
+        opacity: 0.5;
+    }
+}
+
+.line-item2 {
+    width: 228px;
+    height: 100%;
+    position: absolute;
+    left: 32%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(153, 153, 153, 0.05);
+}
+
+.line-item3 {
+    width: 228px;
+    height: 100%;
+    position: absolute;
+    left: 44%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(153, 153, 153, 0.05);
+}
+
+.line-item3::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -2px;
+    width: 3px;
+    height: 30px;
+    background: #F7931C;
+    animation: scroll_2 6s ease-out infinite;
+}
+
+@keyframes scroll_2 {
+    0% {
+        opacity: 1;
+        bottom: 0
+    }
+    50% {
+        bottom: 50%
+    }
+    100% {
+        bottom: 98%;
+        opacity: 0.5;
+    }
+}
+
+.line-item4 {
+    width: 228px;
+    height: 100%;
+    position: absolute;
+    left: 56%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(153, 153, 153, 0.05);
+}
+
+.line-item5 {
+    width: 228px;
+    height: 100%;
+    position: absolute;
+    right: 20%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(153, 153, 153, 0.05);
+}
+
+.line-item5::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -2px;
+    width: 3px;
+    height: 30px;
+    background: #F7931C;
+    animation: scroll_3 6s ease-out infinite;
+}
+
+@keyframes scroll_3 {
+    0% {
+        opacity: 1;
+        top: 0
+    }
+    50% {
+        top: 50%
+    }
+    100% {
+        top: 99%;
+        opacity: 0.5;
+    }
+}
+
+
+/* ---------------------- Section Lines End -------------------- */
